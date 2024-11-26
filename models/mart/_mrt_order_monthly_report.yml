@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mrt_order_monthly_report
+    description: 'ordered product per months'

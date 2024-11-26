@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_local_bike__order_items
+    description: "This model contains information about items ordered"
+    columns:
+      - name: order_id
+        description: "Primary key, unique identifier for each order"
+        tests:
+            - not_null
+      - name: product_id
+        description: "Primary key, unique identifier for each product."
+        tests:
+            - not_null
+
+  - name: stg_local_bike__orders
+    description: "This model contains information about orders"
+    columns:
+      - name: order_id
+        description: "Primary key, unique identifier for each order"
+        tests:
+            - not_null
