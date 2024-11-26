@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_local_bike__order_items
+    description: 'Products that has been most ordered'
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each product."
+        tests:
+          - unique
+          - not_null
+      - name: sum_quantity
+        description: "number of quantity ordered"
+        tests:
+          - not_null
+      

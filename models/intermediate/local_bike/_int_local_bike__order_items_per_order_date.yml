@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_local_bike__order_items_per_order_date
+    description: 'Products that has been most ordered'
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each product."
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: "date of the order"
+        tests:
+          - not_null
+      
